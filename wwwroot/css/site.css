@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
+
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+.footer{
+  text-align: center;
+}
+
+.btn-menu{
+  border: 1px solid black;
+  border-radius: 16px;
+  padding: 5px;
+  width: 150px;
+  background-color: black;
+  color: white;
+  transition: 0.5s;
+}
+.btn-menu:hover{
+  background-color: white;
+  color: black;
+  box-shadow: 3px 5px black;
+}
+.sub-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: aqua; */
+  
+}
+.tarefas{
+  font-family: 'Titan One', cursive;
+}
+
+.icon::after{
+  content: '';
+  position: absolute;
+  width: 1px;
+  height: 25px;
+  background-color: black;
+  margin-left: 3px;
+}
+.icon{
+  margin-right: 3px;
+}

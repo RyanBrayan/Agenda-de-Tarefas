@@ -1,0 +1,46 @@
+@model agenda_de_Tarefa.Models.Tarefa
+
+@{
+    ViewData["title"] = "Deletar tarefa";
+}
+
+
+
+<h1 style="color:red">Deseja realmente <u>Deletar</u> essa tarefa? Cuidado em paezao, não tem volta hein parceiroo!!</h1>
+
+<div>
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(x => x.Titulo)
+        </dt>
+        <dt class="col-sm-10">
+            @Html.DisplayFor(x => x.Titulo)
+        </dt>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(x => x.Descricao)
+        </dt>
+        <dt class="col-sm-10">
+            @Html.DisplayFor(x => x.Descricao)
+        </dt>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(x => x.Data)
+        </dt>
+        <dt class="col-sm-10">
+            @Html.DisplayFor(x => x.Data)
+        </dt>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(x => x.Status)
+        </dt>
+        <dt class="col-sm-10">
+            @Html.DisplayFor(x => x.Status)
+        </dt>
+    </dl>
+</div>
+
+
+<form asp-action="Deletar">
+    <input type="submit" value="Deletar" class="btn btn-danger" />
+</form>
+
+<br>
+<a asp-action="Index">Voltar</a>

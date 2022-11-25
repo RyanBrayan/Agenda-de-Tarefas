@@ -1,0 +1,44 @@
+@model agenda_de_Tarefa.Models.Tarefa// Aqui ele vai retornar o contato que eu to criando quando eu apertar no botão de submit
+
+
+@{
+    ViewData["Title"] = "Editar Tarefa";
+}
+
+<h1>Editar Tarefa</h1>
+
+<hr/>
+
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Editar">
+            <div class="form-group">
+                <label asp-for="Titulo" class="control-label"></label>
+                <input asp-for="Titulo" placeholder="Title" required class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="Descricao" class="control-label"></label>
+                <input asp-for="Descricao" placeholder="Tarefa de correr..." class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="Data" class="control-label"></label>
+                <input asp-for="Data" placeholder="23/32/2022" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="Status" class="control-label"></label>
+                <input type="checkbox" asp-for="Status" class="form-check-input" />
+            </div>
+            <br>
+            <div class="form-group">
+                <input type="submit" value="Editar" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+</hr>
+
+<div>
+    <a asp-action="Index">Voltar</a>
+</div>
+
